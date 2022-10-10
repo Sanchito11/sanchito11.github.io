@@ -14,22 +14,36 @@
             text-align: center;
             color: rgb(118, 255, 3);
             font-size: x-large;
-            background:  rgb(84, 172, 6);
+            background:  rgba(84, 172, 6, .8);
             padding:10px;
             margin: 20px;
         }
-        body>header>button{
+        body>header>div{
+            text-align: left;
+            background-color:  rgba(118,255,3, .8);
+            color: rgb(84, 172, 6);
+            border-color:  rgb(84, 172, 6);
+            padding: 10px;
+        }
+        body>header>div>button{
             background-color:  rgb(84,172,6);
             color: rgb(118, 255, 3);
             border-color:  rgb(118, 255, 3);
         }
-
-        body>div {
+        body>div>section {
             margin: 20px;
             border-style:groove;
             border-color: black;
             padding: 20px;
             background-color: rgba(255, 243, 80, .5);
+        }
+        body>div>section{
+            margin: 40px;
+            text-align: left;
+        }
+        body>div>section>h1{
+            text-align: center;
+            font-size: xx-large;
         }
     </style>
 </head>
@@ -37,26 +51,28 @@
 <body>
     <a name="volver"></a>
     <header>
-        <h1>Diseño de interfaces Web</h1>
+        <p><h1>Diseño de interfaces Web</h1></p>
+        <div>
         <button>
-            <span><h4>Documentacion</h4></span>
+            <span><a href="#docu"><h4>Documentacion</h4></a></span>
           </button>
         <button>
-            <span><h4>Herramientas</h4></span>
+            <span><a href="#herr"><h4>Herramientas</h4></a></span>
           </button>
           <button>
-            <span><h4>Practicas</h4></span>
+            <span><a href="#pract"><h4>Practicas</h4></a></span>
           </button>
+        </div> 
     </header>
-    <div>
-        <p><h1>Temario</h1></p>
-        <div><h2>Tema 1</h2></div>
-        <div><h3>Documentacion</h3></div>
+    <div style="text-align:center"><h1 style="font-size: xxx-large;">Temario</h1>
+        <section>
+            <h1>Tema 1: Planificación de interfaces gráficas</h1>
+        <div><a name="docu"><h2>Documentacion</h2></a></div>
         <p>Estos son archivos PDF con diferentes herramientas que podemos utilizar para crear una página web</p>
             <p><a href="Herramientas Firefox.pdf">Herramientas Firefox</a></p>
             <p><a href="Componentes Diseño Web.pdf">Componentes Diseño Web</a></p>
             <p><a href="Colores.pdf">Diseño de paleta de colores</a></p>
-        <div><h3>Herramientas</h3></div>
+        <div><a name="herr"><h2>Herramientas</h2></a></div>
         <p>Estas son páginas que nos ayudarán a encontrar determindas herramientas para lo que necesitemos</p>
             <p><a href="https://markodenic.com/category/html/">Markodenic.com</a></p>
             <p><a href="https://devdocs.io/">Devdocs.io</a></p>
@@ -65,14 +81,14 @@
             <p><a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">Paletton.com</a></p>
             <p>Herramienta de prototipado</p>
             <p><a href="https://balsamiq.cloud/sx0yltp/projects">Balsamiq</a></p>
-        <div><h3>Practicas</h3></div>
-        <p><h4>Planificacion de Interfaces gráficas</h4></p>
-        <p>Ejemplo de diseño de interfaz grafica con Balsamiq.<br>
+        <div><a name="pract"><h2>Practicas</h2></a></div>
+        <p>Ejemplo de diseño de interfaz grafica con Balsamiq.
         Utilizo los colores que he seleccionado para mi página web.</p>
         <p><a href="SanchoProject.pdf">Componentes en Balsamiq</a></p>
-        <div><h2>Tema 2</h2></div>
-        <div><h2>Tema 3</h2></div>
-        <div><h2>Tema 4</h2></div>
+        </section>
+        <div><h1>Tema 2</h1></div>
+        <div><h1>Tema 3</h1></div>
+        <div><h1>Tema 4</h1></div>
     </div>
     <a href="#volver">VOLVER</a>
 </body>
