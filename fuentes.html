@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuentes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
         header{
             text-align: center;
@@ -20,11 +22,25 @@
             background-image:url("fondo2.jpg");
         }
         body>div{
+            font-family: 'Roboto', sans-serif;
             margin: 20px;
             border-style:groove;
             border-color: black;
             padding: 20px;
             background-color: rgba(255, 243, 80, .5);
+        }
+        body>footer {
+            text-align: center;
+            background-color: rgba(84, 172, 6, .8);
+            color: rgb(118, 255, 3);
+            border-color: rgb(84, 172, 6);
+            padding: 10px;
+            margin: 20px;
+        }
+        button{
+            background-color:  rgb(118,255,3);
+            color: rgb(84,172,6);
+            border-color: rgb(84,172,6);
         }
     </style>
 </head>
@@ -55,6 +71,20 @@
             - Courier Nuevo (monoespaciado)<br>
             - Brush Script MT (cursiva)</p>
     </div>
+    <div>
+        <p><h2 style="text-align:center">Como utilizar fuentes de Google</h2></p>
+        <p>Primeramente entrariamos en la siguiente página donde eligiremos el tipo de fuente que vayamos a usar:<br><br>
+            <b><a href="https://fonts.google.com/">Google Fonts</a></b><br><br>
+        Una vez elegida, la seleccionamos y copiariamos la url correspondiente para ponerla en el <b>&ltheader&gt</b>
+         de nuestro <b>html</b>.</p><br>
+        <p>Después crearemos un CSS donde podamos llamar a la fuente para introducirla, por un CSS externo o introduciendolo en linea
+            como ya sabemos:<br><br>
+            Ejemplo: <b>&ltp font-family: 'Fuzzy Bubbles', cursive;&gt</b><br><br></p>
+        <p style="font-family: 'Fuzzy Bubbles', cursive;">Esta es la fuente resultante tras introducirla, esta chula verdad?</p>
+    </div>
+    <footer>
+    <button><a href="index.html">Volver a la pagina principal</a></button>
+    </footer>
 </body>
 
 </html>
