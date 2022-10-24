@@ -6,47 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sancho Web</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <style>
         body {
             background-image: url('fondo2.jpg');
         }
-        body>header{
+
+        body>header {
             text-align: center;
             color: rgb(118, 255, 3);
             font-size: x-large;
-            background:  rgba(84, 172, 6, .8);
-            padding:5px;
+            background: rgba(84, 172, 6, .8);
+            padding: 5px;
             margin: 40px;
         }
-        body>header>div{
+
+        body>header>div {
             text-align: left;
-            background-color:  rgba(118,255,3, .8);
+            background-color: rgba(118, 255, 3, .8);
             color: rgb(84, 172, 6);
-            border-color:  rgb(84, 172, 6);
+            border-color: rgb(84, 172, 6);
             padding: 10px;
         }
-        button{
-            background-color:  rgb(118,255,3);
-            color: rgb(84,172,6);
-            border-color: rgb(84,172,6);
+
+        body>header>div>button {
+            background-color: rgb(118, 255, 3);
+            color: rgb(84, 172, 6);
+            border-color: rgb(84, 172, 6);
         }
+
         body>div>section {
             margin: 40px;
-            border-style:groove;
+            border-style: groove;
             border-color: black;
             padding: 20px;
             background-color: rgba(255, 243, 80, .5);
         }
-        body>div>section{
+
+        body>div>section {
             margin: 40px;
-            padding:40px;
+            padding: 40px;
             text-align: left;
         }
-        body>div>section>h1{
+        button {
+            background-color: rgb(118, 255, 3);
+            color: rgb(84, 172, 6);
+            border-style: none;
+        }
+
+        body>div>section>h1 {
             text-align: center;
             font-size: xx-large;
         }
+
+        body>div>section>div {
+            background: rgba(84, 172, 6, .8);
+            color: rgb(118, 255, 3);
+        }
+
         body>footer {
             text-align: center;
             background-color: rgba(84, 172, 6, .8);
@@ -61,58 +79,84 @@
 <body>
     <a name="volver"></a>
     <header>
-        <p><h1>Diseño de interfaces Web</h1></p>
+        <p>
+        <h1>Diseño de interfaces Web</h1>
+        </p>
         <div>
-        <button>
-            <a href="#docu"><h4>Documentacion</h4></a>
-          </button>
-        <button>
-            <a href="#herr"><h4>Herramientas</h4></a>
-          </button>
-          <button>
-            <a href="#pract"><h4>Practicas</h4></a>
-          </button>
-        </div> 
+            <button>
+                <a href="#docu">
+                    <h4>Documentacion</h4>
+                </a>
+            </button>
+            <button>
+                <a href="#herr">
+                    <h4>Herramientas</h4>
+                </a>
+            </button>
+            <button>
+                <a href="#pract">
+                    <h4>Practicas</h4>
+                </a>
+            </button>
+        </div>
     </header>
-    <div style="text-align:center"><h1 style="font-size: xxx-large;">Temario</h1>
+    <div style="text-align:center">
+        <h1 style="font-size: xxx-large;">Temario</h1>
         <section>
             <h1>Tema 1: Planificación de interfaces gráficas</h1>
-        <div><a name="docu"><h2>Documentacion</h2></a></div>
-        <p>Estos son archivos PDF con diferentes herramientas que podemos utilizar para crear una página web</p>
-            <p><a href="Herramientas Firefox.pdf">Herramientas Firefox</a></p>
-            <p><a href="Componentes Diseño Web.pdf">Componentes Diseño Web</a></p>
-            <p><a href="Colores.pdf">Diseño de paleta de colores</a></p>
-            <p><a href="Iconos.pdf">Iconos</a></p>
-        <div><a name="herr"><h2>Herramientas</h2></a></div>
-        <p>Estas son páginas que nos ayudarán a encontrar determindas herramientas para lo que necesitemos</p>
-            <p><a href="https://markodenic.com/category/html/">Markodenic.com</a></p>
-            <p><a href="https://devdocs.io/">Devdocs.io</a></p>
+            <div><a name="docu">
+                    <h2>Documentacion</h2>
+                </a></div>
+            <p>Estos son archivos PDF con diferentes herramientas que podemos utilizar para crear una página web</p>
+            <p><button><a href="Herramientas Firefox.pdf">Herramientas Firefox</a></button>
+                <button><a href="Componentes Diseño Web.pdf">Componentes</a></button>
+                <button><a href="Colores.pdf">Colores </a></button>
+                <button><a href="Iconos.pdf">Iconos </a></button>
+                <button><a href="Fuentes.pdf">Fuentes </a></button>
+            </p>
+            <div><a name="herr">
+                    <h2>Herramientas</h2>
+                </a></div>
+            <p>Estas son páginas que nos ayudarán a encontrar determindas herramientas para lo que necesitemos</p>
+            <p><button><a href="https://markodenic.com/category/html/">Markodenic.com</a></button>
+           <button><a href="https://devdocs.io/">Devdocs.io</a></button></p>
             <p>Herramientas de colores</p>
-            <p><a href="https://material.io/">Material.io</a></p>
-            <p><a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">Paletton.com</a></p>
+            <p><button><a href="https://material.io/">Material.io</a></button>
+                <button><a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">Paletton.com</a></button></p>
             <p>Herramienta de prototipado</p>
-            <p><a href="https://balsamiq.cloud/sx0yltp/projects">Balsamiq</a></p>
+            <p><button><a href="https://balsamiq.cloud/sx0yltp/projects">Balsamiq</a></button></p>
             <p>Herramientas de plantillas de iconos</p>
-            <p><a href="https://developers.google.com/fonts/docs/material_icons#icon_font_for_the_web">Iconos de Material Design</a></p>
+            <p><button><a href="https://developers.google.com/fonts/docs/material_icons#icon_font_for_the_web">Iconos de
+                    Material Design</a></button></p>
             <p>Herramientas para uso de fuentes</p>
-            <p><a href="https://fonts.google.com/">Fuentes de Google</a></p>
-        <div><a name="pract"><h2>Practicas</h2></a></div>
-        <p>Ejemplo de diseño de interfaz grafica con Balsamiq.
-        Utilizo los colores que he seleccionado para mi página web.</p>
-        <p><a href="SanchoProject.pdf">Componentes en Balsamiq</a></p>
-        <p>Explicacion breve de como coger plantillas de Iconos de Material Design e introducirlos en nuestro html</p>
-        <p><a href="iconos.html">Desde Material Design</a></p>
-        <p><a href="iconosW3S.html">Desde Fontawesome</a></p>
-        <p><a href="IconosCopia.html">Desde plantillas que hayamos descargado previamente en nuestro ordenador</a></p>
-        <p>Explicacion de como coger plantilas de fuentes ya creadas de otras páginas</p>
-        <p><a href="fuentes.html">Como añadir fuentes de Google Fonts</a></p>
+            <p><button><a href="https://fonts.google.com/">Fuentes de Google</a></button></p>
+            <div><a name="pract">
+                    <h2>Practicas</h2>
+                </a></div>
+            <p>Ejemplo de diseño de interfaz grafica con Balsamiq.
+                Utilizo los colores que he seleccionado para mi página web.</p>
+            <p><a href="SanchoProject.pdf">Componentes en Balsamiq</a></p>
+            <p>Explicacion breve de como coger plantillas de Iconos de Material Design e introducirlos en nuestro html
+            </p>
+            <p><a href="iconos.html">Desde Material Design</a></p>
+            <p><a href="iconosW3S.html">Desde Fontawesome</a></p>
+            <p><a href="IconosCopia.html">Desde plantillas que hayamos descargado previamente en nuestro ordenador</a>
+            </p>
+            <p>Explicacion de como coger plantilas de fuentes ya creadas de otras páginas</p>
+            <p><a href="fuentes.html">Como añadir fuentes de Google Fonts</a></p>
         </section>
-        <div><h1>Tema 2</h1></div>
-        <div><h1>Tema 3</h1></div>
-        <div><h1>Tema 4</h1></div>
+        <div>
+            <h1>Tema 2</h1>
+        </div>
+        <div>
+            <h1>Tema 3</h1>
+        </div>
+        <div>
+            <h1>Tema 4</h1>
+        </div>
     </div>
     <footer>
-    <button><a href="#volver">VOLVER</a></button>
+        <button><a href="#volver">VOLVER</a></button>
     </footer>
 </body>
 
