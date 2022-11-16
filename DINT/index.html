@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconos</title>
+    <style>
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(./Fuentes/MaterialIconsOutlined-Regular.otf);
+            src: local('Material Icons'),
+                local('MaterialIcons-Regular'),
+                /*url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+                url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+                url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');*/
+        }
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+
+        header {
+            text-align: center;
+            font-size: xx-large;
+            background-color: rgba(84, 172, 6, .8);
+            color: rgb(118, 255, 3);
+            border-color: rgb(84, 172, 6);
+            padding: 10px;
+            margin: 20px;
+        }
+
+        body {
+            background-image: url("fondo2.jpg");
+        }
+
+        body>div {
+            margin: 20px;
+            border-style: groove;
+            border-color: black;
+            padding: 20px;
+            background-color: rgba(255, 243, 80, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Iconos</h1>
+    </header>
+    <div>
+        <h2>Url de interés:</h2>
+    <a href="https://github.com/google/material-design-icons/tree/master/font" target="_blank">Descarga iconos</a>
+    </div>
+    <div>
+        <p>Aquí explicamos como descargarnos y utilizar las plantillas de iconos de material design.<br>
+            Lo primero es descargarnos el link de enlace que introduciremos en el head de nuestro html mediante la
+            etiqueta link: <br><br>
+            <b>href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"</b><br><br>
+            Después lo llamaremos a traves de las etiquetas span seguido de la clase a la que hacemos referencia con el
+            nombre del
+            icono que aparece en la pagina.<br><br>
+            Ejemplo:<br><br>
+            <b>&ltspan class="material-icons"&gtface&lt/span&gt</b><br><br>
+            Y ya podremos personalizarlo con CSS como todo lo demás.<br>
+        <p>Aqui paso algunos ejemplos ya personalizados:</p>
+        <span class="material-icons">face</span>
+        <span class="material-icons">home</span>
+        <span class="material-icons">search</span>
+    </div>
+    <div>
+        <p>En este ejemplo aprovecho a introducirlo despues de descargarlo en formato SVG introduciendo código completo
+            de su etiqueta SVG:</p>
+        <p><b>&ltsvg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"&gt
+                &ltpath d="M0 0h24v24H0V0z" fill="none"/&gt&ltpath d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86
+                19 9.81 19 12c0 3.87-3.13
+                7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03
+                9-9c0-2.74-1.23-5.18-3.17-6.83z"/&gt
+                &lt/svg&gt</b></p>
+        <button><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                    d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 
+        7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z" />
+            </svg></button><br>
+        <p>Y aquí paso otros ejemplos con la etiqueta button</p>
+        <p>Haz CLICK en el para volver a la página principal.</p>
+        <button><a href="index.html"><span class="material-icons">home</span></a></button>
+    </div>
+</body>
+</html>
