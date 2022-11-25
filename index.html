@@ -2,278 +2,341 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sancho Web</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="./parallax-template/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="./parallax-template/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <style>
-        body {
-            background-color: white;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sancho Web</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./parallax-template/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="./parallax-template/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <style>
+    body {
+      background-color: white;
+    }
 
-        body>header {
-            text-align: center;
-            color: rgb(118, 255, 3);
-            font-size: x-large;
-            background: rgb(11, 158, 1);
-            padding: 5px;
-        }
+    body>header {
+      text-align: center;
+      color: rgb(118, 255, 3);
+      font-size: x-large;
+      background: rgb(11, 158, 1);
+      padding: 5px;
+    }
 
-        body>header>nav>div {
-            text-align: left;
-            background-color: rgba(118, 255, 3, .9);
-            color: rgb(11, 158, 1);
-            border-style: none;
-            padding: 1mm;
-        }
+    body>header>nav>div {
+      text-align: left;
+      background-color: rgba(118, 255, 3, .9);
+      color: rgb(11, 158, 1);
+      border-style: none;
+      padding: 1mm;
+    }
 
-        body>header>nav>div>li {
-            background-color: rgb(118, 255, 3);
-            color: rgb(84, 172, 6);
-        }
+    body>header>nav>div>li {
+      background-color: rgb(118, 255, 3);
+      color: rgb(84, 172, 6);
+    }
 
-        body>div>section {
-            margin: 40px;
-            border-style: groove;
-            border-color: black;
-            padding: 20px;
-            text-align: left;
-            background-color: rgba(255, 243, 80, .5);
-        }
+    body>div>section {
+      text-align: center;
+      margin: 40px;
+      border-style: groove;
+      border-color: black;
+      padding: 20px;
+    }
 
-        body>footer>button {
-            background-color: rgb(118, 255, 3);
-            color: rgb(11, 158, 1);
-        }
+    body>footer>button {
+      background-color: rgb(118, 255, 3);
+      color: rgb(11, 158, 1);
+    }
 
-        a {
-            color: black;
-        }
+    a {
+      color: black;
+    }
 
-        a:link {
-            text-decoration: black;
-        }
+    a:link {
+      text-decoration: black;
+    }
 
-        a:visited {
-            text-decoration: black;
-        }
+    a:visited {
+      text-decoration: black;
+    }
 
-        button {
-            background-color: rgb(255, 243, 80);
-            color: black;
-            border-style: none;
-            padding: 10px;
-        }
+    button {
+      background-color: rgba(11,158,1,0.5);
+      color: black;
+      border-style: none;
+      padding: 10px;
+    }
 
-        body>div>section>h1 {
-            text-align: center;
-            font-size: xx-large;
-        }
+    body>div>section>h1 {
+      text-align: center;
+      font-size: xx-large;
+    }
 
-        body>div>section {
-            text-align: center;
-        }
+    body>div>section>h4 {
+      background: rgba(11, 158, 1, 0.9);
+      color: rgb(118, 255, 3);
+      padding: 0.1px;
+    }
 
-        body>div>section>h4 {
-            background: rgba(11, 158, 1, 0.9);
-            color: rgb(118, 255, 3);
-            padding: 0.1px;
-        }
-
-        body>footer {
-            text-align: center;
-            background-color: rgba(11, 158, 1, 0.9);
-            color: rgb(118, 255, 3);
-            border-style: none;
-            padding: 10px;
-            margin: 20px;
-        }
-    </style>
+    body>footer {
+      text-align: center;
+      background-color: rgba(11, 158, 1, 0.9);
+      color: rgb(118, 255, 3);
+      border-style: none;
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav><a name="volver"></a>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo center">Diseño de Interfaces Web</a>
-                <ul class="left hide-on-med-and-down">
-                    <li><a href="#docu">Documentacion</a></li>
-                    <li><a href="#herr">Herrramientas</a></li>
-                    <li class="active"><a href="#pract">Practicas</a></li>
-                </ul>
+  <header>
+    <nav><a name="volver"></a>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Diseño de Interfaces Web</a>
+        <ul class="left hide-on-med-and-down">
+          <li><a href="#docu">Documentacion</a></li>
+          <li><a href="#herr">Herrramientas</a></li>
+          <li class="active"><a href="#pract">Practicas</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="parallax"><img
+        src="https://skyviewads.com/wp-content/uploads/2020/09/Web-Designing-Important-for-Your-Business.jpg"
+        alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div style="text-align:center">
+    <h1>Temario</h1>
+    <section>
+      <h1>Tema 1: Planificación de interfaces gráficas</h1>
+      <h4 style="text-align:center">
+        <a name="docu">Documentacion</a>
+      </h4>
+
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Herramientas y componentes</span>
+              <p>Estos son archivos PDF con diferentes herramientas que podemos utilizar para crear una página web</p>
             </div>
-        </nav>
-    </header>
-
-    <div id="index-banner" class="parallax-container">
-        <div class="parallax"><img
-                src="https://skyviewads.com/wp-content/uploads/2020/09/Web-Designing-Important-for-Your-Business.jpg"
-                alt="Unsplashed background img 1"></div>
-    </div>
-
-    <div style="text-align:center">
-        <h1>Temario</h1>
-        <section>
-            <h1>Tema 1: Planificación de interfaces gráficas</h1>
-            <h4 style="text-align:center">
-                <a name="docu">Documentacion</a>
-            </h4>
-
-            <div class="row">
-                <div class="col s12 m12">
-                  <div class="card amber lighten-3">
-                    <div class="card-content black-text">
-                      <span class="card-title">Herramientas y componentes</span>
-                      <p>Estos son archivos PDF con diferentes herramientas que podemos utilizar para crear una página web</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="Herramientas Firefox.pdf">Herramientas Firefox</a>
-                        <a href="Componentes Diseño Web.pdf">Componentes</a>
-                        <a href="Colores.pdf">Colores </a>
-                        <a href="Iconos.pdf">Iconos </a>
-                        <a href="Fuentes.pdf">Fuentes </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="card amber lighten-3">
-                      <div class="card-content black-text">
-                        <span class="card-title">Prototipado</span>
-                        <p>Ejemplo de prototipado exportado de Figma con mis colores primarios para la pagina</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="Figma.pdf">Figma </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s12 m6">
-                    <div class="card amber lighten-3">
-                      <div class="card-content black-text">
-                        <span class="card-title">Guia de Estilos</span>
-                        <p>Ejemplo de guia de estilos de la universidad politecnica de Valencia</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="guia_estilos_upv.pdf">Estilos UPV</a>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-            <h4 style="text-align:center">
-                <a name="herr">Herramientas</a>
-            </h4>
-
-            <div class="row">
-                <div class="col s12 m12">
-                  <div class="card amber lighten-3">
-                    <div class="card-content black-text">
-                        <span class="card-title">Páginas de ayuda</span>
-                        <p>Estas son páginas que nos ayudarán a encontrar determindas herramientas para lo que necesitemos</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://markodenic.com/category/html/">Markodenic.com</a>
-                        <a href="https://devdocs.io/">Devdocs.io</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card amber lighten-3">
-                      <div class="card-content black-text">
-                        <span class="card-title">Colores</span>
-                      </div>
-                      <div class="card-action">
-                        <a href="https://material.io/">Material.io</a>
-                        <a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">Paletton.com</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card amber lighten-3">
-                      <div class="card-content black-text">
-                        <span class="card-title">Iconos</span>
-                      </div>
-                      <div class="card-action">
-                        <a
-                        href="https://developers.google.com/fonts/docs/material_icons#icon_font_for_the_web">Iconos de
-                        Material Design</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card amber lighten-3">
-                      <div class="card-content black-text">
-                        <span class="card-title">Fuentes</span>
-                      </div>
-                      <div class="card-action">
-                        <a href="https://fonts.google.com/">Fuentes de Google</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card amber lighten-3">
-                      <div class="card-content black-text">
-                        <span class="card-title">Prototipado</span>
-                      </div>
-                      <div class="card-action">
-                        <a href="https://www.figma.com">Figma</a>
-                        <a href="https://balsamiq.cloud">Balsamiq</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col s12 m12">
-                    <div class="card amber lighten-3">
-                      <div class="card-content black-text">
-                        <span class="card-title">Plantillas</span>
-                        <p>En estas paginas encontraremos todos las plantillas de lo que necesitemos para nuestra pagina web, componentes, colores, etc...</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="https://getbootstrap.com/">Bootstrap</a>
-                        <a href="https://materializecss.com/">Materialize</a>
-                      </div>
-                    </div>
-                </div>
+            <div class="card-action">
+              <a href="Herramientas Firefox.pdf">Herramientas Firefox</a>
+              <a href="Componentes Diseño Web.pdf">Componentes</a>
+              <a href="Colores.pdf">Colores </a>
+              <a href="Iconos.pdf">Iconos </a>
+              <a href="Fuentes.pdf">Fuentes </a>
             </div>
-             
-            <h4 style="text-align:center">
-                <a name="pract">Practicas</a>
-            </h4>
-            <p>Ejemplo de diseño de interfaz grafica con Balsamiq.
-                Utilizo los colores que he seleccionado para mi página web.<button><a
-                        href="SanchoProject.pdf">Componentes en Balsamiq</a></button></p>
-            <p>Explicacion breve de como coger plantillas de Iconos de Material Design e introducirlos en nuestro html
-            </p>
-            <p><button><a href="iconos.html">Desde Material Design</a></button>
-                <button><a href="iconosW3S.html">Desde Fontawesome</a></button>
-                <button><a href="IconosCopia.html">Desde plantillas que hayamos descargado previamente en nuestro
-                        ordenador</a></button>
-            </p>
-            <p>Explicacion de como coger plantilas de fuentes ya creadas de otras páginas <button><a
-                        href="fuentes.html">Como añadir fuentes de Google Fonts</a></button></p>
-            <p>Ejemplo de uso de Bootstrap: <button><a href="./DINT/carrusel.html">Bootstrap</a></button></p>
-            <p>Ejemplo de uso de MaterializeCSS: <button><a
-                        href="./parallax-template/prueba.html">Materialize</a></button></p>
-        </section>
-        <div>
-            <h1>Tema 2</h1>
+          </div>
         </div>
-        <div>
-            <h1>Tema 3</h1>
+        <div class="col s12 m6">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Prototipado</span>
+              <p>Ejemplo de prototipado exportado de Figma con mis colores primarios para la pagina</p>
+            </div>
+            <div class="card-action">
+              <a href="Figma.pdf">Figma </a>
+            </div>
+          </div>
         </div>
-        <div>
-            <h1>Tema 4</h1>
+        <div class="col s12 m6">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Guia de Estilos</span>
+              <p>Ejemplo de guia de estilos de la universidad politecnica de Valencia</p>
+            </div>
+            <div class="card-action">
+              <a href="guia_estilos_upv.pdf">Estilos UPV</a>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <h4 style="text-align:center">
+        <a name="herr">Herramientas</a>
+      </h4>
+
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Páginas de ayuda</span>
+              <p>Estas son páginas que nos ayudarán a encontrar determindas herramientas para lo que necesitemos</p>
+            </div>
+            <div class="card-action">
+              <a href="https://markodenic.com/category/html/">Markodenic.com</a>
+              <a href="https://devdocs.io/">Devdocs.io</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Colores</span>
+            </div>
+            <div class="card-action">
+              <a href="https://material.io/">Material.io</a>
+              <a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">Paletton.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Iconos</span>
+            </div>
+            <div class="card-action">
+              <a href="https://developers.google.com/fonts/docs/material_icons#icon_font_for_the_web">Iconos de
+                Material Design</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Fuentes</span>
+            </div>
+            <div class="card-action">
+              <a href="https://fonts.google.com/">Fuentes de Google</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Prototipado</span>
+            </div>
+            <div class="card-action">
+              <a href="https://www.figma.com">Figma</a>
+              <a href="https://balsamiq.cloud">Balsamiq</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 style="text-align:center">
+        <a name="pract">Practicas</a>
+      </h4>
+      
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Balsamiq</span>
+              <p>Ejemplo de diseño de interfaz grafica con Balsamiq.</p>
+            </div>
+            <div class="card-action">
+              <a href="SanchoProject.pdf">Componentes en Balsamiq</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Iconos</span>
+              <p>Explicacion breve de como coger plantillas de Iconos de Material Design, Fontawesome y descargadas e
+                introducirlos en nuestro html
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="iconos.html">Material Design</a>
+              <a href="iconosW3S.html">Fontawesome</a>
+              <a href="IconosCopia.html">Descargadas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Google Fonts</span>
+              <p>Explicacion de como coger plantilas de fuentes ya creadas de otras páginas
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="fuentes.html">Google Fonts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <h1>Tema 2: Uso de Estilos</h1>
+      <h4 style="text-align:center">
+        <a name="docu">Documentacion</a>
+      </h4>
+
+      <h4 style="text-align:center">
+        <a name="herr">Herramientas</a>
+      </h4>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Plantillas</span>
+              <p>En estas paginas encontraremos todos las plantillas de lo que necesitemos para nuestra pagina web,
+                componentes, colores, etc...</p>
+            </div>
+            <div class="card-action">
+              <a href="https://getbootstrap.com/">Bootstrap</a>
+              <a href="https://materializecss.com/">Materialize</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 style="text-align:center">
+        <a name="pract">Practicas</a></h4>
+        <div class="row">
+        <div class="col s12 m6">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Bootstrap</span>
+              <p>Ejemplo de uso de Bootstrap:
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="./DINT/carrusel.html">Bootstrap</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Materialize</span>
+              <p>Ejemplo de uso de MaterializeCSS:
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="./parallax-template/prueba.html">Materialize</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+    </section>
+    
+    <div>
+      <h1>Tema 3</h1>
     </div>
-    <footer>
-        <button><a href="#volver">VOLVER</a></button>
-    </footer>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="./parallax-template/js/materialize.js"></script>
-    <script src="./parallax-template/js/init.js"></script>
+    <div>
+      <h1>Tema 4</h1>
+    </div>
+  </div>
+
+  <footer>
+      <button><a href="#volver">VOLVER</a></button>
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="./parallax-template/js/materialize.js"></script>
+  <script src="./parallax-template/js/init.js"></script>
 </body>
 
 </html>
