@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sancho Web</title>
+  <script src=javascript.js></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./parallax-template/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="./parallax-template/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -63,7 +64,7 @@
     }
 
     button {
-      background-color: rgba(11,158,1,0.5);
+      background-color: rgba(11, 158, 1, 0.5);
       color: black;
       border-style: none;
       padding: 10px;
@@ -95,12 +96,24 @@
   <header>
     <nav><a name="volver"></a>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo center">Diseño de Interfaces Web</a>
+        <a href="#!" class="brand-logo right">Diseño de Interfaces Web</a>
         <ul class="left hide-on-med-and-down">
           <li><a href="#docu">Documentacion</a></li>
           <li><a href="#herr">Herrramientas</a></li>
-          <li class="active"><a href="#pract">Practicas</a></li>
+          <li><a href="#pract">Practicas</a></li>
+          <li><a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a></li>
         </ul>
+
+        <div>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -224,7 +237,7 @@
       <h4 style="text-align:center">
         <a name="pract">Practicas</a>
       </h4>
-      
+
       <div class="row">
         <div class="col s12 m12">
           <div class="card yellow lighten-4">
@@ -239,7 +252,7 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <div class="card yellow lighten-4">
             <div class="card-content black-text">
               <span class="card-title">Balsamiq</span>
@@ -250,7 +263,7 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <div class="card yellow lighten-4">
             <div class="card-content black-text">
               <span class="card-title">Google Fonts</span>
@@ -262,7 +275,7 @@
             </div>
           </div>
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <div class="card yellow lighten-4">
             <div class="card-content black-text">
               <span class="card-title">Guia de Estilos</span>
@@ -270,6 +283,17 @@
             </div>
             <div class="card-action">
               <a href="GuiaEstilos.pdf">Guia Estilos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card yellow lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Examen 1ª Evaluacion Prototipado</span>
+            </div>
+            <div class="card-action">
+              <a
+                href="https://www.figma.com/file/Pmf59j2ikxGFOy5qnHmCby/Examen-Dise%C3%B1o?node-id=1%3A57&t=43yDoCw8okNOsBHb-1">Figma</a>
             </div>
           </div>
         </div>
@@ -302,8 +326,9 @@
       </div>
 
       <h4 style="text-align:center">
-        <a name="pract">Practicas</a></h4>
-        <div class="row">
+        <a name="pract">Practicas</a>
+      </h4>
+      <div class="row">
         <div class="col s12 m6">
           <div class="card yellow lighten-4">
             <div class="card-content black-text">
@@ -328,10 +353,10 @@
             </div>
           </div>
         </div>
-        </div>
+      </div>
 
     </section>
-    
+
     <div>
       <h1>Tema 3</h1>
     </div>
@@ -341,9 +366,16 @@
   </div>
 
   <footer>
-      <button><a href="#volver">VOLVER</a></button>
+    <button><a href="#volver">VOLVER</a></button>
   </footer>
+
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.dropdown-trigger');
+      var instances = M.Dropdown.init(elems, options);
+    });
+  </script>
   <script src="./parallax-template/js/materialize.js"></script>
   <script src="./parallax-template/js/init.js"></script>
 </body>
