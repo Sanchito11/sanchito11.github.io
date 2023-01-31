@@ -12,6 +12,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="style.css" />
+  <script src="/parallax-template/js/init.js"></script>
 </head>
 
 <body>
@@ -19,11 +20,12 @@
     <nav><a name="volver"></a>
       <div class="nav-wrapper">
         <a class="brand-logo right">Diseño de Interfaces Web</a>
-        <ul class="left hide-on-med-and-down">
+        <ul id="nav" class="side-nav">
           <li><a href="#t1"><b>Tema 1</b></a></li>
           <li><a href="#t2"><b>Tema 2</b></a></li>
           <li><a href="#t3"><b>Tema 3</b></a></li>
         </ul>
+        <a href="#" data-activates="nav" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </header>
@@ -313,18 +315,40 @@
     <section><a name="t3"></a>
       <h2>Tema 3: Contenido Multimedia</h2>
       <h4 style="text-align:center">Documentacion</h4>
-      <div class="row"> 
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card grey lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Imagenes</span>
+              <p>Posibilidades de adaptación de imagenes W3Schools</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.w3schools.com/css/css_rwd_images.asp">Imagenes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card grey lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Video</span>
+              <p>Posibilidades de adaptación de video W3Schools</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.w3schools.com/html/html5_video.asp">Video</a>
+            </div>
+          </div>
+        </div>
       </div>
       <h4 style="text-align:center">Herramientas</h4>
       <div class="row">
         <div class="col s12 m12">
           <div class="card grey lighten-4">
             <div class="card-content black-text">
-              <span class="card-title">Imagenes</span>
-              <p>Aqui puedes ver las posibilidades de adaptación de imagenes</p>
+              <span class="card-title">Video</span>
+              <p>Herramientas de controles de video mdn Web Docs</p>
             </div>
             <div class="card-action">
-              <a href="https://www.w3schools.com/css/css_rwd_images.asp">W3Schools</a>
+              <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">Video</a>
             </div>
           </div>
         </div>
@@ -332,7 +356,7 @@
 
       <h4 style="text-align:center">Practicas</h4>
       <div class="row">
-        <div class="col s12 m12">
+        <div class="col s12 m6">
           <div class="card grey lighten-4">
             <div class="card-content black-text">
               <span class="card-title">Imagenes</span>
@@ -343,7 +367,18 @@
             </div>
           </div>
         </div>
-
+        <div class="col s12 m6">
+          <div class="card grey lighten-4">
+            <div class="card-content black-text">
+              <span class="card-title">Video</span>
+              <p>Prueba de uso externo de controles de video</p>
+            </div>
+            <div class="card-action">
+              <a href="video.html">Video</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <div>
       <h2>Tema 4</h2>

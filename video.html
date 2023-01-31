@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de video</title>
+    <link rel="stylesheet" href="./parallax-template/css/bootstrap.min.css" type="text/css">
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 5%;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            background-color: rgb(55, 55, 55);
+            border: 20mm;
+            border-radius: 5%;
+            border-color: black;
+            box-shadow: 5px 5px 10px rgb(251, 0, 138);
+        }
+        .titulo{
+            display: flex;
+            justify-content: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:rgb(251, 0, 138);
+        }
+        .controles{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 5%;
+        }
+        button{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="titulo">
+            <h1>Controles de video</h1>
+        </div>
+        <video width="480" height="320" controls="controls" id="myVideo">
+            <source src="XJ6.mp4" type="video/mp4" />
+        </video>
+        <div class="controles">
+            <button onclick="playVideo();" class="btn btn-success">
+                Play <i class="glyphicon glyphicon-play"></i>
+            </button>
+            <button onclick="pauseVideo();" class="btn btn-warning">
+                Pause <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button onclick="stopVideo()" class="btn btn-danger">
+                Stop <i class="glyphicon glyphicon-stop"></i>
+            </button>
+            <button onclick="rewindVideo();" class="btn btn-info">
+                Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+            </button>
+        </div>
+    </div>
+</body>
+<script>
+    theVideo = document.querySelector("#myVideo");
+
+    function playVideo() {
+        theVideo.play();
+    }
+
+    function pauseVideo() {
+        theVideo.pause();
+    }
+
+    function stopVideo() {
+        theVideo.currentTime = 0;
+        theVideo.pause();
+    }
+
+    function rewindVideo() {
+        theVideo.currentTime = 0;
+    }
+</script>
+
+</html>
