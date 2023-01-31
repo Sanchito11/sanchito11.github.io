@@ -23,6 +23,18 @@
        color: #373737;
    }
 
+   .tabs{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #373737;
+   }
+
+   .tab{
+    display: flex;
+    flex-direction: row;
+   }
+
    h1 {
        color:white;
        margin: 10rem;
