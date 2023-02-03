@@ -10,6 +10,12 @@
        padding: 5px;
    }
 
+   .parallax-container {
+    line-height: 0;
+    height: 200px;
+    color: rgba(255,255,255,.9);
+}
+
    body>header>nav>div {
        text-align: left;
        background-color: #18ffff;
@@ -92,3 +98,4 @@
        padding: 10px;
        margin: 20px;
    }
+   
