@@ -11,10 +11,10 @@
    }
 
    .parallax-container {
-    line-height: 0;
-    height: 200px;
-    color: rgba(255,255,255,.9);
-}
+       line-height: 0;
+       height: 200px;
+       color: rgba(255, 255, 255, .9);
+   }
 
    body>header>nav>div {
        text-align: left;
@@ -29,20 +29,20 @@
        color: #373737;
    }
 
-   .tabs{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #373737;
+   .tabs {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       background-color: #373737;
    }
 
-   .tab{
-    display: flex;
-    flex-direction: row;
+   .tab {
+       display: flex;
+       flex-direction: row;
    }
 
    h1 {
-       color:white;
+       color: white;
        margin: 5rem;
    }
 
@@ -97,11 +97,13 @@
        background-color: #18ffff;
        color: black;
        border-style: none;
-       padding: 10px;
+       padding: 5px;
        margin: 20px;
    }
-   button{
-    box-shadow: 5px 5px 5px black;
-    border-radius: 20%;
+
+   button {
+       box-shadow: 5px 5px 5px black;
+       width: 40px;
+       height: 40px;
+       margin: 2%;
    }
-   
