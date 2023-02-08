@@ -83,9 +83,9 @@
    }
 
    body>div>section>h4 {
-       background: #373737;
-       color: #18ffff;
+       color: white;
        padding: 0.1px;
+       text-shadow: 5px 5px 5px black;
    }
 
    body>footer {
