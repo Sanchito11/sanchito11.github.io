@@ -1,0 +1,55 @@
+@font-face {
+    font-family: babylonica;
+    src: url("/ExamenDiseño/RecursosExamen/Babylonica-Regular.ttf") format('truetype');
+  }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar{
+    background-color: #0D3B66;
+    color:white;
+}
+.video{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.controles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenido{
+    margin:5%;
+}
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0D3B66;
+    color:white;
+    padding: 1%;
+}
+.album{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #B45189;
+    border-radius: 5%;
+    padding: 1%;
+    margin:3%;
+    width: 350px;
+}

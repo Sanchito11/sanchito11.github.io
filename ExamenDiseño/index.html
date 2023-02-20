@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Simple video control</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Exam Museum</a>
+              <a class="navbar-brand" href="index.html">Home</a>
+              <a class="navbar-brand" href="pictures.html">PICTURES</a>
+            </div>
+          </nav>
+    </header>
+    <div class="video">
+        <video width="1000px" height="auto" controls="controls" id="myVideo">
+            <source src="RecursosExamen/Un paseo por la Casa Lis.mp4" type="video/mp4" />
+            <source src="RecursosExamen/Un paseo por la Casa Lis (video-converter.com).webm" type="video/ogg" />
+        </video>
+        <div class="controles">
+            <button onclick="playVideo();" class="btn btn-success">
+                Play <i class="glyphicon glyphicon-play"></i>
+            </button>
+            <button onclick="pauseVideo();" class="btn btn-warning">
+                Pause <i class="glyphicon glyphicon-pause"></i>
+            </button>
+            <button onclick="stopVideo()" class="btn btn-danger">
+                Stop <i class="glyphicon glyphicon-stop"></i>
+            </button>
+            <button onclick="rewindVideo();" class="btn btn-info">
+                Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+            </button>
+        </div>
+    </div>
+    <div class="contenido">
+        <h3>The Lis House</h3>
+        <p>Casa Lis is an urban palace nestled on the old city wall, 
+            ordered to be built by D. Miguel de Lis (1855-1909). The person 
+            in charge of carrying out this project was Joaquín de Vargas y 
+            Aguirre (1857-1935), a native of Jerez de la Frontera, who landed 
+            in Salamanca to occupy the position of provincial architect. Don 
+            Miguel de Lis owned a tanning factory that he had inherited from 
+            his father and which he adapted to the new production systems in 
+            the last decade of the 19th century. This prosperous business provided 
+            him with a comfortable economic position, so that D. Miguel is, at the 
+            time he builds his new urban palace, one of the hundred largest taxpayers 
+            in Salamanca. Defined as a person skilled in business and a tireless worker, 
+            his "modern" character can be appreciated in the conception of his new home.</p>
+    </div>
+    <footer class="pie">
+        <div class="izq">
+            <p>Visitanos en:<br>
+            C/Gibraltar,14 (37008) Salamanca 923121425</p>
+        </div>
+        <div class="med">
+            <img src="./RecursosExamen/casadelisUbicacion.jpg" width="500px" height="auto">
+        </div>
+        <div class="der">
+            <p>Siguenos en redes sociales</p>
+            <img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png" width="30px">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" width="30px">
+        </div>
+    </footer>
+
+    <script>
+        theVideo = document.querySelector("#myVideo");
+
+        function playVideo() {
+            theVideo.play();
+        }
+
+        function pauseVideo() {
+            theVideo.pause();
+        }
+
+        function stopVideo() {
+            theVideo.currentTime = 0;
+            theVideo.pause();
+        }
+
+        function rewindVideo() {
+            theVideo.currentTime = 0;
+        }
+    </script>
+</body>
+
+</html>
